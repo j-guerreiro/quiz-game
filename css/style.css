@@ -1,15 +1,70 @@
 html {
   font-family: 'Cairo', sans-serif;
   margin: 0 auto;
+  line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 body {
+  background-color: rgb(255, 140, 0);
 }
 
 .container-quiz {
-  border-style: 1px solid darkgreen;
-  border-radius: 10px;
-  width: 500px;
-  height: 500px;
+  padding: 10px 25px;
+  background-color: rgb(255, 254, 254);
+  position: relative;
+  border: 15px groove darkgreen;
+  border-radius: 0px 0px 10px 10px;
+  width: 89%;
+  height: 50%;
+}
+
+.container-question {
+  margin-top: 5px;
+  padding: 10px 25px;
+  background-color: rgb(255, 254, 254);
+  position: relative;
+  border: 10px groove darkgreen;
+  border-radius: 0px 0px 10px 10px;
+  width: 90%;
+  height: 50%;
+}
+
+.container-choice {
+  position: relative;
+  padding: 10px 25px;
+  background-color: rgb(255, 254, 254);
+  position: relative;
+  border: 5px groove darkgreen;
+  border-radius: 0px 0px 10px 10px;
+  width: 91%;
+  height: 80%;
+
+}
+
+.option {
+  position: relative;
+  padding: 10px 25px;
+  background-color: rgb(255, 254, 254);
+  position: relative;
+  border: 2px groove darkgreen;
+  border-radius: 10px 10px 10px 10px;
+  width: 91%;
+  height: 80%;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+}
+
+.option:hover {
+  background-color: cornsilk;
+  color: rgb(39, 38, 38);
 }
 
