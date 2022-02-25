@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
-  <title>Quiz Game</title>
+  <title>LOTRO - Quiz Game</title>
 </head>
 
 <body>
@@ -20,15 +20,19 @@
         <h1>Quiz Game</h1>
       </div>
       <div class="container-question">
-        <p>1. Como se chama o mago que mora na torre de Isengard?</p>
+        <p class="question">Como se chama o mago branco que residiu na torre Orthanc em Isengard?</p>
       </div>
       <div class="container-choice">
         <div class="choices-inner">
-          <div class="option">A.</div>
-          <div class="option">B.</div>
-          <div class="option">C.</div>
-          <div class="option">D.</div>
+          <button id="btn-option" class="option">A. Gandalf </button>
+          <button id="btn-option" class="option">B. Frodo </button>
+          <button id="btn-option" class="option">C. Sauron </button>
+          <button id="btn-option" class="option">D. Saruman </button>
         </div>
+      </div>
+      <div class="container-btn">
+        <button id="tentar" class="btn-tentar" type="submit">Tentar outro</button>
+        <button id="enviar" class="btn-tentar" type="submit">Enviar Resposta</button>
       </div>
     </section>
   </main>
