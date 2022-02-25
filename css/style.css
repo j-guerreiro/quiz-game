@@ -1,0 +1,15 @@
+html {
+  font-family: 'Cairo', sans-serif;
+  margin: 0 auto;
+}
+
+body {
+}
+
+.container-quiz {
+  border-style: 1px solid darkgreen;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+}
+
