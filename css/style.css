@@ -92,6 +92,11 @@ body {
   flex-flow: column wrap;
 }
 
+.choices-inner #btn-option:focus {
+  background-color: rgb(255, 238, 0);
+  color: rgb(7, 7, 7);
+}
+
 .container-btn {
   display: flex;
   justify-content: space-evenly;
