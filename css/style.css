@@ -26,7 +26,7 @@ body {
   position: relative;
   border: 15px groove darkgreen;
   border-radius: 0px 0px 10px 10px;
-  width: 89%;
+  width: 89.5%;
   height: 50%;
 }
 
@@ -37,7 +37,7 @@ body {
   position: relative;
   border: 10px groove darkgreen;
   border-radius: 10px 10px 0px 0px;
-  width: 100vw;
+  width: 90.2%;
   height: 80%;
   font-weight: bold;
 }
@@ -97,6 +97,10 @@ body {
   background-color: chartreuse;
   color: rgb(13, 46, 5);
   cursor: pointer;
+}
+
+.footer .copyright {
+  text-transform: capitalize;
 }
 
 @keyframes botao {
