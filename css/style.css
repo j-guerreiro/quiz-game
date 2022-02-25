@@ -21,7 +21,7 @@ body {
 }
 
 .container-quiz {
-  padding: 0px 25px;
+  padding: 20px 25px;
   background-color: rgb(255, 254, 254);
   position: relative;
   border: 15px groove darkgreen;
@@ -32,13 +32,14 @@ body {
 
 .container-question {
   margin-top: 5px;
-  padding: 10px 25px;
+  padding: 20px 25px;
   background-color: rgb(255, 254, 254);
   position: relative;
   border: 10px groove darkgreen;
   border-radius: 10px 10px 0px 0px;
-  width: 90%;
-  height: 50%;
+  width: 100vw;
+  height: 80%;
+  font-weight: bold;
 }
 
 .container-question .question {
@@ -53,13 +54,13 @@ body {
   border: 5px groove darkgreen;
   border-radius: 0px 0px 10px 10px;
   width: 91%;
-  height: 80%;
+  height: 100%;
 
 }
 
 .option {
   position: relative;
-  padding: 10px 25px;
+  padding: 20px 25px;
   background-color: rgb(255, 254, 254);
   position: relative;
   border: 2px groove darkgreen;
