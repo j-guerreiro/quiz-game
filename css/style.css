@@ -16,7 +16,12 @@ h2 {
 
 body {
   background-color: rgb(255, 140, 0);
-  animation-name: botao;
+  animation-name: animacao-bg;
+  animation-duration: 1s;
+}
+
+.title-game {
+  animation-name: animacao-titulo;
   animation-duration: 1s;
 }
 
@@ -123,7 +128,12 @@ body {
   text-transform: capitalize;
 }
 
-@keyframes botao {
+@keyframes animacao-bg {
   from {background-color: red;}
   to {background-color: yellow;}  
+}
+
+@keyframes animacao-titulo {
+  from {color: red;}
+  to {color: rgb(132, 0, 255);}  
 }
