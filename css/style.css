@@ -57,7 +57,7 @@ body {
   margin: 0 auto;
   margin-top: 5px;
   padding: 20px 25px;
-  background-color: rgb(255, 254, 254);
+  background-color: rgba(255, 254, 254, 0.411);
   position: relative;
   border: 10px groove darkgreen;
   border-radius: 10px 10px 0px 0px;
@@ -66,8 +66,12 @@ body {
   font-weight: bold;
 }
 
+
 .container-question .question {
-  color: rgb(13, 46, 5);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1em;
+  font-stretch: expanded;
 }
 
 .container-choice {
@@ -75,7 +79,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 10px 25px;
-  background-color: rgb(255, 254, 254);
+  background-color: rgba(255, 254, 254, 0.411);
   position: relative;
   border: 5px groove darkgreen;
   border-radius: 0px 0px 10px 10px;
