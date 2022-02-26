@@ -139,7 +139,7 @@ body {
   margin-top: 5%;
 }
 .footer .copyright {
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 
 @keyframes animacao-bg {
