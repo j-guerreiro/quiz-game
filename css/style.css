@@ -109,6 +109,7 @@ body {
 .container-btn {
   display: flex;
   justify-content: space-evenly;
+  border-radius: 100%;
 }
 
 /* botao azul */
