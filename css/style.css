@@ -44,7 +44,6 @@ body {
   padding: 20px 25px;
   background-color: rgb(255, 254, 254);
   position: relative;
-  border: 15px groove darkgreen;
   border-radius: 0px 0px 10px 10px;
   width: 75%;
   height: 75%;
@@ -59,7 +58,6 @@ body {
   padding: 20px 25px;
   background-color: rgba(255, 254, 254, 0.411);
   position: relative;
-  border: 10px groove darkgreen;
   border-radius: 10px 10px 0px 0px;
   width: 75%;
   height: 75%;
@@ -81,7 +79,6 @@ body {
   padding: 10px 25px;
   background-color: rgba(255, 254, 254, 0.411);
   position: relative;
-  border: 5px groove darkgreen;
   border-radius: 0px 0px 10px 10px;
   width: 75%;
   height: 75%;
@@ -104,8 +101,9 @@ body {
 }
 
 .choices-inner #btn-option:focus {
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(255, 173, 107);
   color: rgb(7, 7, 7);
+  border: 2px solid rgb(0, 255, 42);
 }
 
 .container-btn {
