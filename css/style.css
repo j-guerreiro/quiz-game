@@ -15,7 +15,7 @@ h2 {
 }
 
 body {
-  background-color: rgb(255, 140, 0);
+  background: linear-gradient(86deg, rgba(0,37,255,1) 21%, rgba(3,255,0,1) 54%, rgba(251,255,0,1) 97%); 
   animation-name: animacao-bg;
   animation-duration: 1s;
 }
@@ -23,6 +23,10 @@ body {
 .title-game {
   animation-name: animacao-titulo;
   animation-duration: 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .quiz-section {
@@ -32,6 +36,9 @@ body {
 }
 
 .container-quiz {
+  background-image: url(/assets/confetti-carnaval.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   position: relative;
   padding: 20px 25px;
@@ -93,7 +100,7 @@ body {
 }
 
 .choices-inner #btn-option:focus {
-  background-color: rgb(255, 238, 0);
+  background-color: rgb(255, 115, 0);
   color: rgb(7, 7, 7);
 }
 
@@ -134,8 +141,8 @@ body {
 }
 
 @keyframes animacao-bg {
-  from {background-color: red;}
-  to {background-color: yellow;}  
+  from {background:linear-gradient(86deg, rgba(0,37,255,1) 0%, rgba(3,255,0,1) 62%, rgba(251,255,0,1) 88%); }
+  to {background: linear-gradient(86deg, rgba(251,255,0,1) 4%, rgba(0,37,255,1) 49%, rgba(3,255,0,1) 93%); }  
 }
 
 @keyframes animacao-titulo {
