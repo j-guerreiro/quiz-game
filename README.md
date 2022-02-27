@@ -33,5 +33,5 @@ Estou utilizando o editor de código VSCODE-Insiders, sistema operacional GNU Ar
 
 ## Créditos
 
-A Sheila Guerreiro por ter contribuído com muitas ideias, sugestões e críticas construtivas.
-A Gabi Santos por ser a primeira usuária e ajudar com ideas e melhorias.
+À Sheila Guerreiro por ter contribuído com a produção do conteúdo e sugestões construtivas.
+À Gabi Santos por ser a primeira usuária e ajudar com ideas e melhorias.
