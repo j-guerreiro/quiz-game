@@ -1,6 +1,6 @@
 # Quiz Game - Jogo de Perguntas e Respostas
 
-# Sobre o Jogo
+## Sobre o Jogo
 
 A ideia inicial era um jogo de quiz com tema medieval, mas como sugestão de S-GUERREIRO decidi mudar para um tema carnavalesco. O design foi criado a partir de ideias e tentativa e erro.
 
