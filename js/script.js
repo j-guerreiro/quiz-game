@@ -7,7 +7,7 @@ const perguntas_quiz = [
   B:"Azul e Branco",
   C:"Verde e Rosa",
   D:"Verde e Amarelo", 
-  resposta: "C. Verde e Rosa"},
+  resposta: "Verde e Rosa"},
 
   //1
   { pergunta: "Quem criou a primeira marchinha de Carnaval no Brasil?",
@@ -15,7 +15,7 @@ const perguntas_quiz = [
   B:"Cartola",
   C:"Carmem Miranda",
   D:"Chiquinha Gonzaga", 
-  resposta: "D. Chiquinha Gonzaga"},
+  resposta: "Chiquinha Gonzaga"},
 
   //2
   { pergunta: "Em qual estado brasileiro surgiu o frevo?",
@@ -23,7 +23,7 @@ const perguntas_quiz = [
   B:"Pernambuco",
   C:"Roraima",
   D:"Espírito Santo", 
-  resposta:"B. Pernambuco"},
+  resposta:"Pernambuco"},
 
   //3
   { pergunta: "Qual o significado da palavra Carnaval?",
@@ -31,7 +31,7 @@ const perguntas_quiz = [
   B:"Festa da Carne",
   C:"Festa de Dionísio",
   D:"Festa da Folia", 
-  resposta: "A. Afastar-se da carne"},
+  resposta: "Afastar-se da carne"},
 
   //4
   { pergunta: "Em que ano surgiu o trio elétrico no Carnaval de Salvador?",
@@ -39,7 +39,7 @@ const perguntas_quiz = [
   B:"1950",
   C:"1947",
   D:"1970", 
-  resposta: "B. 1950"},
+  resposta: "1950"},
 
 ];
 
