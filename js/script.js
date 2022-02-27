@@ -72,4 +72,5 @@ const getInteiroAleatorio = () => {
   return valor;
 }
 
+//carrega a funcao 'carregarQuestao()' ao atualizar o APP ( refresh  F5 )
 window.addEventListener("load", carregarQuestao, false);
