@@ -56,10 +56,10 @@ const carregarQuestao = () => {
   const textoAlternativaC = document.getElementById("btn-option C");
   const textoAlternativaD = document.getElementById("btn-option D");
 
-  textoAlternativaA.textContent = perguntas_quiz[ inteiroAleatorio ].A;
-  textoAlternativaB.textContent = perguntas_quiz[ inteiroAleatorio ].B;
-  textoAlternativaC.textContent = perguntas_quiz[ inteiroAleatorio ].C;
-  textoAlternativaD.textContent = perguntas_quiz[ inteiroAleatorio ].D;
+  textoAlternativaA.value = perguntas_quiz[ inteiroAleatorio ].A;
+  textoAlternativaB.value = perguntas_quiz[ inteiroAleatorio ].B;
+  textoAlternativaC.value = perguntas_quiz[ inteiroAleatorio ].C;
+  textoAlternativaD.value = perguntas_quiz[ inteiroAleatorio ].D;
 
 }
 
@@ -72,5 +72,15 @@ const getInteiroAleatorio = () => {
   return valor;
 }
 
+const responderQuestao = () => {
+  opcaoResposta = document.getElementsByClassName("option");
+  pontuacao = document.getElementById("tentar");
+}
+
+const gerarPontos = () => {
+}
+
 //carrega a funcao 'carregarQuestao()' ao atualizar o APP ( refresh  F5 )
 window.addEventListener("load", carregarQuestao, false);
+
+window.addEventListener("click", responderQuestao());
