@@ -100,7 +100,7 @@ body {
   flex-flow: column wrap;
 }
 
-.choices-inner #btn-option:focus {
+.choices-inner .option:focus {
   background-color: rgb(107, 255, 198);
   color: rgb(7, 7, 7);
   border: 2px solid rgb(0, 255, 42);
