@@ -7,8 +7,7 @@ const perguntas_quiz = [
   B:"Azul e Branco",
   C:"Verde e Rosa",
   D:"Verde e Amarelo", 
-  alternativa: "C", 
-  resposta: "Verde e Rosa"},
+  resposta: "C. Verde e Rosa"},
 
   //1
   { pergunta: "Quem criou a primeira marchinha de Carnaval no Brasil?",
@@ -16,8 +15,7 @@ const perguntas_quiz = [
   B:"Cartola",
   C:"Carmem Miranda",
   D:"Chiquinha Gonzaga", 
-  alternativa: "D", 
-  resposta: "Chiquinha Gonzaga"},
+  resposta: "D. Chiquinha Gonzaga"},
 
   //2
   { pergunta: "Em qual estado brasileiro surgiu o frevo?",
@@ -25,8 +23,7 @@ const perguntas_quiz = [
   B:"Pernambuco",
   C:"Roraima",
   D:"Espírito Santo", 
-  alternativa: "B", 
-  resposta: "Pernambuco"},
+  resposta:"B. Pernambuco"},
 
   //3
   { pergunta: "Qual o significado da palavra Carnaval?",
@@ -34,8 +31,7 @@ const perguntas_quiz = [
   B:"Festa da Carne",
   C:"Festa de Dionísio",
   D:"Festa da Folia", 
-  alternativa: "A", 
-  resposta: "Afastar-se da carne"},
+  resposta: "A. Afastar-se da carne"},
 
   //4
   { pergunta: "Em que ano surgiu o trio elétrico no Carnaval de Salvador?",
@@ -43,8 +39,7 @@ const perguntas_quiz = [
   B:"1950",
   C:"1947",
   D:"1970", 
-  alternativa: "B", 
-  resposta: "1950"},
+  resposta: "B. 1950"},
 
 ];
 
@@ -55,6 +50,17 @@ const carregarQuestao = () => {
 
   const textoPergunta = document.getElementById("question-text");
   textoPergunta.textContent = perguntas_quiz[ inteiroAleatorio ].pergunta;
+
+  const textoAlternativaA = document.getElementById("btn-option A");
+  const textoAlternativaB = document.getElementById("btn-option B");
+  const textoAlternativaC = document.getElementById("btn-option C");
+  const textoAlternativaD = document.getElementById("btn-option D");
+
+  textoAlternativaA.textContent = perguntas_quiz[ inteiroAleatorio ].A;
+  textoAlternativaB.textContent = perguntas_quiz[ inteiroAleatorio ].B;
+  textoAlternativaC.textContent = perguntas_quiz[ inteiroAleatorio ].C;
+  textoAlternativaD.textContent = perguntas_quiz[ inteiroAleatorio ].D;
+
 }
 
 //funcao que gera valores aleatorios para selecionar questoes
