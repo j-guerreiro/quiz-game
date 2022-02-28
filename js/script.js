@@ -56,10 +56,10 @@ const carregarQuestao = () => {
   const textoAlternativaC = document.getElementById("btn-option C");
   const textoAlternativaD = document.getElementById("btn-option D");
 
-  textoAlternativaA.value = perguntas_quiz[ inteiroAleatorio ].A;
-  textoAlternativaB.value = perguntas_quiz[ inteiroAleatorio ].B;
-  textoAlternativaC.value = perguntas_quiz[ inteiroAleatorio ].C;
-  textoAlternativaD.value = perguntas_quiz[ inteiroAleatorio ].D;
+  textoAlternativaA.textContent = perguntas_quiz[ inteiroAleatorio ].A;
+  textoAlternativaB.textContent = perguntas_quiz[ inteiroAleatorio ].B;
+  textoAlternativaC.textContent = perguntas_quiz[ inteiroAleatorio ].C;
+  textoAlternativaD.textContent = perguntas_quiz[ inteiroAleatorio ].D;
 
 }
 
@@ -73,14 +73,37 @@ const getInteiroAleatorio = () => {
 }
 
 const responderQuestao = () => {
-  opcaoResposta = document.getElementsByClassName("option");
-  pontuacao = document.getElementById("tentar");
+  
+  //capturando texto questao
+
+  const pergunta = document.querySelector(".container-question");
+  const perguntaText = pergunta.textContent;
+  
+  //capturando o texto das alternativas
+  const alternativaA = document.getElementById("btn-option A");
+  const alternativaB = document.getElementById("btn-option B");
+  const alternativaC = document.getElementById("btn-option C");
+  const alternativaD = document.getElementById("btn-option D");
+  const respostaA = alternativaA.textContent;
+  const respostaB = alternativaB.textContent;
+  const respostaC = alternativaC.textContent;
+  const respostaD = alternativaD.textContent;
+
+  //atualizarApp();
+  /*
+  Ao clicar na alternativa e clicar em enviar,
+  a resposta selecionada deverá ser comparado ao gabarito, 
+  e caso a resposta seja correta, incrementar 10pts à pontuação atual e 
+  atualizar a pagina.
+  */
+
 }
 
-const gerarPontos = () => {
+//funcao que atualiza a pagina
+const atualizarApp = () => {
+  window.location.reload();
 }
 
 //carrega a funcao 'carregarQuestao()' ao atualizar o APP ( refresh  F5 )
 window.addEventListener("load", carregarQuestao, false);
-
-window.addEventListener("click", responderQuestao());
+window.addEventListener("click", responderQuestao);
