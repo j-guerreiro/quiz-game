@@ -83,19 +83,25 @@ const responderQuestao = () => {
   const btnEnviar = document.getElementById("enviar");
 
   
-  //capturando o texto das alternativas
-  const alternativaA = document.getElementById("btn-option A");
-  const alternativaB = document.getElementById("btn-option B");
-  const alternativaC = document.getElementById("btn-option C");
-  const alternativaD = document.getElementById("btn-option D");
+  /*capturando o texto das alternativas
+  //const alternativaA = document.getElementById("btn-option A");
+  //const alternativaB = document.getElementById("btn-option B");
+  //const alternativaC = document.getElementById("btn-option C");
+  //const alternativaD = document.getElementById("btn-option D");
   const respostaA = alternativaA.textContent;
   const respostaB = alternativaB.textContent;
   const respostaC = alternativaC.textContent;
-  const respostaD = alternativaD.textContent;
+  const respostaD = alternativaD.textContent; */
+
+  alternativas = document.querySelectorAll(".choices-inner");
+
+  alternativas.forEach(element => {
+    element.addEventListener("click", enviarResposta( element.textContent));
+  });
 
   //listener para alternativa selecionada
 
-  alternativaA.addEventListener("click", enviarResposta( respostaA ) );
+  //alternativaA.addEventListener("click", enviarResposta( respostaA ) );
   //alternativaB.addEventListener("click", enviarResposta( respostaB ) );
   //alternativaC.addEventListener("click", enviarResposta( respostaC ) );
   //alternativaD.addEventListener("click", enviarResposta( respostaD ) );
