@@ -47,7 +47,6 @@ const perguntas_quiz = [
 const carregarQuestao = () => {
 
   const inteiroAleatorio = getInteiroAleatorio();
-
   const textoPergunta = document.getElementById("question-text");
   textoPergunta.textContent = perguntas_quiz[ inteiroAleatorio ].pergunta;
 
@@ -72,6 +71,8 @@ const getInteiroAleatorio = () => {
   return valor;
 }
 
+
+
 const responderQuestao = () => {
   
   //capturando texto questao
@@ -92,12 +93,18 @@ const responderQuestao = () => {
   const respostaC = alternativaC.textContent;
   const respostaD = alternativaD.textContent;
 
-  //listener para botao enviar
-  btnEnviar.addEventListener("click", enviarResposta )
+  //listener para alternativa selecionada
 
-  //atualizarApp();
+  alternativaA.addEventListener("click", enviarResposta( respostaA ) );
+  //alternativaB.addEventListener("click", enviarResposta( respostaB ) );
+  //alternativaC.addEventListener("click", enviarResposta( respostaC ) );
+  //alternativaD.addEventListener("click", enviarResposta( respostaD ) );
+
+  //listener para botao enviar
+  //btnEnviar.addEventListener("click", enviarResposta() )
+
   /*
-  Ao clicar na alternativa e clicar em enviar,
+  Ao clicar na alternativa e depois clicar em enviar,
   a resposta selecionada deverá ser comparada ao gabarito, 
   e caso a resposta seja correta, incrementar 10pts à pontuação atual e 
   atualizar a pagina.
@@ -105,7 +112,35 @@ const responderQuestao = () => {
 
 }
 
-const enviarResposta = () => {
+const enviarResposta = ( valorResposta ) => {
+  console.log(valorResposta);
+  const perguntaQuiz = document.querySelector(".container-question");
+  const textoPerguntaQuiz = perguntaQuiz.textContent;
+  const pontos = document.getElementById("display-pontos");
+
+
+  for ( let i = 0 ; i < perguntas_quiz.length ; i++ ) {
+    if ( perguntas_quiz[ i ].pergunta == textoPerguntaQuiz ) {
+      if ( perguntaQuiz[ i ].resposta == valorResposta ){
+        pergunta.textContent = "PARABÉNS, ACERTOU!";
+        pontos.textContent = '100';
+        break;
+      } else {
+        pergunta.textContent = "UMA PENA, MAS ERROU!";
+      }
+    }
+  }
+
+  //se acertar
+  
+  //se errar
+  //pergunta.textContent = "ERRÔ MISERÁVI";
+
+
+  //pegar o valor comparar com o gabarito
+  //caso esteja certa dar um feedback
+  //acrescentar pontos
+  //recarregar pagina com nova questao
 }
 
 //funcao que atualiza a pagina
