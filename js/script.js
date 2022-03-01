@@ -78,6 +78,9 @@ const responderQuestao = () => {
 
   const pergunta = document.querySelector(".container-question");
   const perguntaText = pergunta.textContent;
+
+  const btnEnviar = document.getElementById("enviar");
+
   
   //capturando o texto das alternativas
   const alternativaA = document.getElementById("btn-option A");
@@ -89,14 +92,20 @@ const responderQuestao = () => {
   const respostaC = alternativaC.textContent;
   const respostaD = alternativaD.textContent;
 
+  //listener para botao enviar
+  btnEnviar.addEventListener("click", enviarResposta )
+
   //atualizarApp();
   /*
   Ao clicar na alternativa e clicar em enviar,
-  a resposta selecionada deverá ser comparado ao gabarito, 
+  a resposta selecionada deverá ser comparada ao gabarito, 
   e caso a resposta seja correta, incrementar 10pts à pontuação atual e 
   atualizar a pagina.
   */
 
+}
+
+const enviarResposta = () => {
 }
 
 //funcao que atualiza a pagina
